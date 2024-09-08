@@ -38,9 +38,9 @@ export default function RootLayout({
               <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
                 <div className="w-full max-w-5xl flex justify-between items-center p-3 px-5 text-sm">
                   <div className="size-max">
-                    <Link href="/" className="font-bold">CoolMail</Link>
+                    <Link href="/home" className="font-bold text-3xl font-sans">CoolMail</Link>
                   </div>
-                  <div className="flex justify-between items-center">
+                  <div className="flex justify-between items-center gap-3">
                     {!hasEnvVars ? <EnvVarWarning /> : <HeaderAuth />}
                     <ThemeSwitcher />
                   </div>
